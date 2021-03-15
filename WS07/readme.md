@@ -90,7 +90,7 @@ You can add any other private members in the class, as required by your design.
 - a custom constructor that receives as parameters the license plate number and the year when the vehicle was built.  Set the location of the vehicle at `Factory`. Assume all data is valid.
 - `void moveTo(const char* address)`: moves the vehicle to the new address if the new address is different from the current address. Prints to the screen the message
   ```txt
- |[LICENSE_PLATE]| |[CURRENT_ADDRESS] ---> [NEW_ADDRESS]|<ENDL>
+  |[LICENSE_PLATE]| |[CURRENT_ADDRESS] ---> [NEW_ADDRESS]|<ENDL>
   ```
   where
   - the license plate is a field of 8 characters aligned to the right
