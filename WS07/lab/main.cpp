@@ -8,8 +8,8 @@
 #include<iostream>
 #include "Truck.h"
 #include "Truck.h" // intentional
-#include "Vehicle.h"
-#include "Vehicle.h" // intentional
+#include "MotorVehicle.h"
+#include "MotorVehicle.h" // intentional
 
 using namespace std;
 using namespace sdds;
@@ -55,7 +55,7 @@ int main()
 	{
 		printHeader("T1: Vehicle");
 
-		Vehicle aVehicle("VVV-111", 2010);
+		MotorVehicle aVehicle("VVV-111", 2010);
 		cout << aVehicle << endl << endl;
 
 		aVehicle.moveTo("Downtown Toronto");
@@ -88,7 +88,7 @@ int main()
 
 		printHeader("T4: Read/Write");
 		cin >> aTruck;
-		cout << endl << (Vehicle)aTruck;
+		cout << endl << (MotorVehicle)aTruck;
 		cout << endl << aTruck << endl << endl;
 	}
 }

@@ -1,6 +1,6 @@
 # Workshop #7: Derived Classes & Custom I/O Operators
 
-In this workshop, you will work with classes that make up the hierarchical structure. The base or parent class will be a `Vehicle` that holds common attributes of a vehicle with an engine then the child class `Truck` will be derived from the parent class. In addition to this hierarchy, we will define custom input/output operators for these classes.
+In this workshop, you will work with classes that make up the hierarchical structure. The base or parent class will be a `MotorVehicle` that holds common attributes of a vehicle with an engine then the child class `Truck` will be derived from the parent class. In addition to this hierarchy, we will define custom input/output operators for these classes.
 
 
 ## Learning Outcomes
@@ -62,18 +62,18 @@ To check the output, use a program that can compare text files.  Search online f
 # lab (part 1) (100%)
 
 
-## `Vehicle` Module
+## `MotorVehicle` Module
 
-Design and code a class named `Vehicle` that holds information about a vehicle with an engine. Place your class definition in a header file named `Vehicle.h` and your function definitions in an implementation file named `Vehicle.cpp`.
+Design and code a class named `MotorVehicle` that holds information about a vehicle with an engine. Place your class definition in a header file named `MotorVehicle.h` and your function definitions in an implementation file named `MotorVehicle.cpp`.
 
 Include in your solution all of the statements necessary for your code to compile under a standard C++ compiler and within the `sdds` namespace.
 
-### `Vehicle` Class
+### `MotorVehicle` Class
 
-Design and code a class named `Vehicle` that holds information about a vehicle with an engine.
+Design and code a class named `MotorVehicle` that holds information about a vehicle with an engine.
 
 
-#### `Vehicle` Private Members
+#### `MotorVehicle` Private Members
 
 The class should be able to store the following data:
 
@@ -85,17 +85,18 @@ You can add any other private members in the class, as required by your design.
 
 
 
-#### `Vehicle` Public Members
+#### `MotorVehicle` Public Members
 
 - a custom constructor that receives as parameters the license plate number and the year when the vehicle was built.  Set the location of the vehicle at `Factory`. Assume all data is valid.
 - `void moveTo(const char* address)`: moves the vehicle to the new address if the new address is different from the current address. Prints to the screen the message
   ```txt
- |[LICENSE_PLATE]| |[CURRENT_ADDRESS] ---> [NEW_ADDRESS]|<ENDL>
+  |[LICENSE_PLATE]| |[CURRENT_ADDRESS] ---> [NEW_ADDRESS]|<ENDL>
   ```
   where
   - the license plate is a field of 8 characters aligned to the right
   - current address is a field of 20 characters aligned to the right
   - new address is a field of 20 characters aligned to left
+
 - `ostream& write(ostream& os)`: a query that inserts into `os` the content of the object in the format
   ```txt
   | [YEAR] | [PLATE] | [ADDRESS]
@@ -110,7 +111,7 @@ You can add any other private members in the class, as required by your design.
 
 #### Helper Functions
 
-- overload the insertion and extraction operators to insert a `Vehicle` into a stream and extract a `Vehicle` from a stream. These operators should call the `write`/`read` member functions in the class `Vehicle`.
+- overload the insertion and extraction operators to insert a `MotorVehicle` into a stream and extract a `MotorVehicle` from a stream. These operators should call the `write`/`read` member functions in the class `MotorVehicle`.
 
 ## `Truck` Module
 
@@ -120,7 +121,7 @@ Include in your solution all of the statements necessary for your code to compil
 
 ### `Truck` Class
 
-Design and code a class named `Truck` that holds information about a motor vehicle that can carry cargo.  **This class should inherit from `Vehicle` class.**
+Design and code a class named `Truck` that holds information about a motor vehicle that can carry cargo.  **This class should inherit from `MotorVehicle` class.**
 
 
 #### `Truck` Private Members
