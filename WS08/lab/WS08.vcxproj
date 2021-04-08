@@ -139,13 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="LblShape.h" />
-    <ClInclude Include="Line.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Shape.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="LblShape.cpp" />
+    <ClCompile Include="LblShape.h" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -154,6 +149,11 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ws8data.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

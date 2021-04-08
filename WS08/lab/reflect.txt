@@ -1,0 +1,11 @@
+ Name:         Mahshad Najafi Ragheb
+ Student ID:   136115201
+ email:        mnajafi-ragheb@myseneca.ca
+ Date:         2021-03-25
+ Section: 	NBB (ws08)
+ -----------------------------------------
+In this workshop, I have learned how to implement inheritance in an object-oriented language. Encapsulation, Inheritance and polymorphism are the pillars of every object-oriented design. Inheritance is having a design and inherit all the features of the base design to make a new design (reusing design). In other words, inheritance is creating a new thing from an old thing.
+
+Inheritance is hierarchical. In this workshop, we have four classes. The "Shape" class is the base class (interface), then we have the "LblShape" class which is a child of Shape class. Then there are two more classes, "Line" and "Rectangle" which are children of LblShape class. We also can say that the Line is a kind of LblShape and LblShape is a kind of Shape.
+
+The objects of a child class (derived class) contain all member variables from the base class. For example,  both Line and Rectangle classes inherit m_label, the instance variable of the LblShape and they both have their own member variables as well. Also, derived classes have access to the public and protected member variables and methods of the base class. In this workshop, Line and Rectangle classes have access to label(), a protected method, in the LblShape class.
