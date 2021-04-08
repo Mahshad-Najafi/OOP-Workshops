@@ -1,0 +1,18 @@
+ Name:         Mahshad Najafi Ragheb
+ Student ID:   136115201
+ email:        mnajafi-ragheb@myseneca.ca
+ Date:         2021-03-17
+ Section: 	   NBB (ws04)
+ -----------------------------------------
+By doing this workshop I have learned about constructors and destructors, the importance of using destructors to avoid memory leaks and overloading constructors. 
+
+Encapsulation requires initializing data members at creation, otherwise, an object's date member will contain undefined value until client codes call a modifier. If a data member is undefined, it may break by calling a member function that assumes a valid value for the data member. Also, encapsulation requires to end of objects' lifetime before going out of scope.
+
+C++ uses constructors to avoid undefined data members. Constructors are invoked when any objects are created. They set the data members to an empty state. Also, the destructor is invoked before an object goes out of scope. All the terminal logics are coded in a destructor. 
+
+Constructors and destructors must be defined in public. The program does not compile if a constructor/destructor is defined in private. Constructors and destructors have the same name as their class. Constructors can be overloaded. For example, in this workshop, we have a class of Canister. Constructors and destructor can be defined as follows:
+   Canister();  //default constructor
+   Canister(const char* contentName);  //overloaded constructor
+   ~Canister();  //destructor
+Constructors and destructors are not functions. They can not be called.    
+  

@@ -1,0 +1,11 @@
+ Name:         Mahshad Najafi Ragheb
+ Student ID:   136115201
+ email:        mnajafi-ragheb@myseneca.ca
+ Date:         2021-04-04
+ Section: 	   NBB (ws09)
+ -----------------------------------------
+In this workshop, I learned about function templates. Function templates are part of parametric polymorphism. By using function template we can use the same logic for different types. For example in this workshop we used the "search" function for objects with three different types: Students, Cars and Employee. 
+
+The search function template contains two types. It receives four arguments and returns a bool. The first argument is a reference to a Collection object. The second argument is an array of objects from Collection. The third argument is an integer type that indicates the length of the second argument and finally, the last argument is a constant array.
+
+The listArrayElements function template contains one type. It receives three arguments and returns nothing. The first argument is a const Cstring, the second one is a const array and the last one is the lenght of the second arguments.

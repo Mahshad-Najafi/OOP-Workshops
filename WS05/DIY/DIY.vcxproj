@@ -19,10 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mark.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Mark.cpp" />
+    <ClCompile Include="Mark.h" />
     <ClCompile Include="markMain.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

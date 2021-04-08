@@ -138,11 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cstring.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="popReport.cpp" />
     <ClCompile Include="Population.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cstring.h" />
     <ClInclude Include="Population.h" />
     <ClInclude Include="File.h" />
   </ItemGroup>

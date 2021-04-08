@@ -1,0 +1,16 @@
+ Name:         Mahshad Najafi Ragheb
+ Student ID:   136115201
+ email:        mnajafi-ragheb@myseneca.ca
+ Date:         2021-03-26
+ Section: 	   NBB (ws05)
+ -----------------------------------------
+In this workshop, I learned about the concept of operators and overloading the operators in object-oriented languages. In c++ all the operators are built-in and they include but not limited to binary operators, unary, assignment, logical, and relational.
+
+Operators enable object-oriented languages to use expressions for objects. For example, x += y is a valid expression where x and y are numbers. But the above expression is invalid if x and y are objects. However, overloading the operators enables us to write x += y expression, where x and y are objects.
+
+The signature of an overloaded operator contains the operator keyword, the symbol of operation, the const status of operation and the type of right operand if exists. These are some examples of member operators prototype from the workshop:
+	operator int() const;
+    bool operator ~() const;
+    Account& operator = (int number);  //class Account
+    Account& operator += (double balance);
+  

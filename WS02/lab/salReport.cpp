@@ -4,14 +4,14 @@
 // Author: Fardad Soleimanloo
 // Description:
 // This file tests the lab section of your workshop
-// Do not modify your code
 /////////////////////////////////////////////
+// Do not modify your code
 #include "Employee.h"
 using namespace sdds;
 int main() {
-   if (load()) {
-      display();
-   }
-   deallocateMemory();
-   return 0;
+    if (load()) {
+        display();
+    }
+    deallocateMemory();
+    return 0;
 }

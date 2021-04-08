@@ -6,6 +6,7 @@
 // This file tests the DIY section of your workshop
 // Do not modify your code
 /////////////////////////////////////////////
+#include <iostream>
 #include "Population.h"
 using namespace sdds;
 int main() {

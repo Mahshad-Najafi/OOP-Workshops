@@ -1,0 +1,23 @@
+ Name:         Mahshad Najafi Ragheb
+ Student ID:   136115201
+ email:        mnajafi-ragheb@myseneca.ca
+ Date:         2021-03-12
+ Section: 	   NBB
+ -----------------------------------------
+In this workshop, I have learned how to define a class, its objects, data members and functions. 
+
+The object's instance variables, data members, can be fundamental type such as int, double, etc or compound type such as pointer type, reference type, etc. In order to limit the accessibility of class members to client code, we can identify them as private. To access private data members we should use function members. For example, to access the data member m_taxed we should use tax() function.
+
+	namespace sdds {
+	   class Item {
+		  char m_itemName[21];
+		  double m_price;
+		  bool m_taxed;
+	   public:
+		  double price()const;
+		  double tax()const;
+	   };
+	}
+
+To create an object of the Item class: 
+	Item A;

@@ -24,12 +24,18 @@
     <ClCompile Include="popReport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="File.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Population.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

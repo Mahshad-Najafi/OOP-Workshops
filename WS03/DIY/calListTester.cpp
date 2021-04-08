@@ -47,7 +47,7 @@ int main() {
    }
    CL.display();
    CL.deallocate();
-   //testDMA(CL); // uncommnet to test DMA
+   testDMA(CL); // uncommnet to test DMA
    return 0;
 }
 

@@ -1,5 +1,10 @@
-#ifndef SDDS_BOX_H
-#define SDDS_BOX_H
+/*
+    Name:           Mahshad Najafi Ragheb
+
+    I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+#ifndef SDDS_CANISTER_H
+#define SDDS_CANISTER_H
 #include <iostream>
 namespace sdds {
    class Canister {
@@ -20,7 +25,7 @@ namespace sdds {
       ~Canister();
       Canister& setContent(const char* contentName);
       Canister& pour(double quantity);
-      Canister& pour(Canister&);
+      Canister& pour(Canister& C);
       double volume()const;
       std::ostream& display()const;
       double capacity()const;
@@ -28,4 +33,4 @@ namespace sdds {
    };
 }
 
-#endif // !SDDS_BOX_H
+#endif // !SDDS_CANISTER_H

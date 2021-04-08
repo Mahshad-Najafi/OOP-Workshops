@@ -112,7 +112,7 @@ int main() {
    displayAccounts(mixed, 10);
    cout << "Attempting to change the account number of the valid account#7:" << endl;
    displayAccount(mixed[6] = 12121);
-   cout << "Attempting to set a account that are not new: (7 and 6)" << endl;
+   cout << "Attempting to set accounts that are not new: (7 and 6)" << endl;
    cout << "This attempt should not affect either account" << endl;
    cout << "Before: " << endl;
    displayAccounts(&mixed[5], 2);
