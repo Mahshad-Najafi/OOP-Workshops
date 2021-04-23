@@ -1,6 +1,7 @@
 /*
 	Name:           Mahshad Najafi Ragheb
 	Date:           2021-04-14
+	Description:	WS06-P1
 	The copy assignment operator is borrowed from Navpreet Singh.
 */
 #define _CRT_SECURE_NO_WARNINGS
@@ -106,6 +107,21 @@ namespace sdds {
 			loadText();
 		}
 	}
+
+	//The copy assignment operator is borrowed from Navpreet Singh.
+	TextFile& TextFile::operator=(const TextFile& source)
+	{
+
+		if (source.m_textLines != nullptr && m_textLines != nullptr)
+		{
+			delete[] m_textLines;
+			m_textLines = nullptr;
+			source.saveAs(m_filename);
+			setNoOfLines();
+			loadText();
+		}
+		return *this;
+	}
 	// copy operator function written by Mahshad:
 	//TextFile& TextFile::operator=(const TextFile& source) {
 	//	if (m_textLines != nullptr && source.m_textLines != nullptr) {
@@ -124,21 +140,6 @@ namespace sdds {
 	//	}
 	//	return *this;
 	//}
-
-	//The copy assignment operator is borrowed from Navpreet Singh.
-	TextFile& TextFile::operator=(const TextFile& source)
-	{
-
-		if (source.m_textLines != nullptr && m_textLines != nullptr)
-		{
-			delete[] m_textLines;
-			m_textLines = nullptr;
-			source.saveAs(m_filename);
-			setNoOfLines();
-			loadText();
-		}
-		return *this;
-	}
 	TextFile::~TextFile() {
 		delete[] m_textLines;
 		delete[] m_filename;
