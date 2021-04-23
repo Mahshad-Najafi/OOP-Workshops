@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 
+const int MAX_NO_OF_RECS = 15;
 
 namespace sdds {
 	bool loadList();

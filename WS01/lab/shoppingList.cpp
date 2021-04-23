@@ -3,7 +3,6 @@
 #include "ShoppingRec.h"
 #include "ShoppingList.h"
 using namespace std;
-const int MAX_NO_OF_RECS = 15;
 
 namespace sdds {
 	int noOfRecs = 0;
